@@ -1,17 +1,18 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, './dist')
+        path: path.resolve(__dirname, './dist'),
+        publicPath: "./dist"
     },
     mode: 'none',
     module: {
-        rules:[
+        rules: [
             {
                 test: /\.(png|jpg)$/,
-                type: 'asset/resource'
+                type: 'assets/resource'
             }
         ]
     }
