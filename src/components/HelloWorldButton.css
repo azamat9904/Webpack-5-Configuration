@@ -1,0 +1,13 @@
+.test-btn{
+    outline: 0;
+    padding: 10px;
+    background: green;
+    border-radius: 15px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.test-text{
+    color: green;
+}

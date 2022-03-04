@@ -1,5 +1,5 @@
-import { helloWorld } from "./helloWorld";
-import addImage from "./addImage"
+import { HelloWorldButton } from "./components/HelloWorldButton";
 
-helloWorld();
-addImage()
+
+const helloWorldInstance = new HelloWorldButton();
+helloWorldInstance.render();
