@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path")
 
 module.exports = {
     entry: './src/index.js',
@@ -11,13 +11,17 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpg)/,
                 type: 'asset',
                 parser: {
                     dataUrlCondition: {
-                        maxSize: 3 * 1024
+                        maxSize: 10000 * 1024
                     }
                 }
+            },
+            {
+                test: /\.(txt)/,
+                type: 'asset/source'
             }
         ]
     }
